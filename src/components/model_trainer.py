@@ -41,10 +41,10 @@ class ModelTrainer:
                 "Decision Tree": DecisionTreeRegressor(),
                 "Gradient Boosting": GradientBoostingRegressor(),
                 "Linear Regression": LinearRegression(),
-                # "K-neighbors classifier": KNeighborsRegressor(),
-                # "XGBClassifier": XGBRegressor(),
-                # "Catboost Classifier": CatBoostRegressor(verbose=False),
-                # "Adaboost Classifier": AdaBoostRegressor()
+                "K-neighbors classifier": KNeighborsRegressor(),
+                "XGBRegressor": XGBRegressor(),
+                "CatBoosting Regressor": CatBoostRegressor(verbose=False),
+                "AdaBoost Regressor": AdaBoostRegressor()
             }
 
             parameters = {
@@ -67,6 +67,7 @@ class ModelTrainer:
                     'n_estimators': [8,16,32,64,128,256]
                 },
                 "Linear Regression":{},
+                "K-neighbors classifier":{},
                 "XGBRegressor":{
                     'learning_rate':[.1,.01,.05,.001],
                     'n_estimators': [8,16,32,64,128,256]

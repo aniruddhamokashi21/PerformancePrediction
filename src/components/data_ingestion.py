@@ -1,6 +1,6 @@
 import os
 import sys 
-sys.path.append("D:\Forage_DS\PerformancePrediction")
+sys.path.append("D:\DataScience\PerformancePrediction")
 from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
